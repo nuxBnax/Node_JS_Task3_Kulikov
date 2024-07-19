@@ -4,11 +4,6 @@ const fs = require('fs');
 
 const app = express();
 
-let counter = {
-	countMain: 0,
-	countAbout: 0
-}
-
 const filePath = path.join(__dirname, 'count.json');
 
 app.get('/',(req, res) => {
